@@ -1,0 +1,6 @@
+.xt-fade-enter-active, .xt-fade-leave-active {
+  transition: opacity .5s;
+}
+.xt-fade-enter, .xt-fade-leave-to /* .xt-fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
