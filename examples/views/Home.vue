@@ -3,6 +3,7 @@
     <div @click="resetFun()">切换重置！！</div>
     <infinite-scroll ref="scroll" :loading="loading" @load="load" basetext="这个就是底线">
       <div style="height:30px" v-for="(item,index) in list" :key="index">{{item}}</div>
+      
     </infinite-scroll>
   </div>
 </template>

@@ -2,8 +2,14 @@
 examples/
 packages/
 public/
+git/
  
 # 忽略指定文件
 vue.config.js
 babel.config.js
 *.map
+<<<<<<< HEAD
+*.git
+=======
+*.git
+>>>>>>> 修改package.json
