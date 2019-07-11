@@ -5,15 +5,9 @@
   "main": "lib/xingti-ui.umd.min.js",
   "keyword": "xingti-ui",
   "private": false,
-<<<<<<< HEAD
   "author": "lzf1987",
   "license": "MIT",
   "bugs": "https://github.com/lzf1987/xingti-ui/issues",
-=======
-  "author":"lzf1987",
-  "license": "MIT",
-  "bugs":"https://github.com/lzf1987/xingti-ui/issues",
->>>>>>> 修改package.json
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

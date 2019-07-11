@@ -8,8 +8,4 @@ git/
 vue.config.js
 babel.config.js
 *.map
-<<<<<<< HEAD
 *.git
-=======
-*.git
->>>>>>> 修改package.json
