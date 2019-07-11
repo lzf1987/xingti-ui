@@ -73,4 +73,3 @@ methods: {
 
 如果想要立即改变状态  请用  this.$nextTick  来修改！！！
 
-![Image text](https://raw.githubusercontent.com/hongmaju/light7Local/master/img/productShow/20170518152848.png)
