@@ -1,15 +1,23 @@
 <template>
   <div class="reset-box">
     <div @click="resetFun()">切换重置！！</div>
-    <infinite-scroll ref="scroll" :loading="loading" @load="load" basetext="这个就是底线">
-      <div style="height:30px" v-for="(item,index) in list" :key="index">{{item}}</div>
-    </infinite-scroll>
+    <div class="reset-scroll">
+      <infinite-scroll ref="scroll" :loading="loading" @load="load" basetext="这个就是底线">
+        <div style="height:30px" v-for="(item,index) in list" :key="index">{{item}}</div>
+      </infinite-scroll>
+    </div>
   </div>
 </template>
  <style>
 .reset-box {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.reset-scroll{
+  flex: 1;
+  overflow: hidden;
 }
 </style>
 <script>
@@ -30,7 +38,7 @@ export default {
   methods: {
     load() {
       this.loading = true;
-      if (this.page < 3) {
+      if (this.page <3) {
         setTimeout(() => {
           this.page++;
           for (var i = 0; i < 30; i++) {
@@ -45,7 +53,7 @@ export default {
       }
     },
     resetFun() {
-      this.page=0;
+      this.page = 0;
       this.$refs.scroll.reset();
     }
   }

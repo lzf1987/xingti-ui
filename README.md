@@ -28,7 +28,7 @@ npm install xingti-ui -S
 |loading  | boolean  |  打开滚动icon的开关 |    默认为false|
 |basetext  |string    | 底部展示的文字    |         默认:"——我是有底线的！！——"|
 |load      |function |  滚动到底部触发的方法   | load(): 看例子#1.0.0 |
-|stopRolling      |function |  滚动到中的方法   | stopRolling(Val): 开始滚动是true  结束滚动为 false |
+|stopRolling      |function |  滚动中的方法   | stopRolling(Val): 开始滚动是true  结束滚动为 false |
 |reset      |function |  重置组件的方法  | 需要用到组件通讯来实现！！ 列子：1.0.1 |
 
 ###例子1.0.0
@@ -73,4 +73,5 @@ methods: {
 
 如果想要立即改变状态  请用  this.$nextTick  来修改！！！
 
-![Image text](https://raw.githubusercontent.com/hongmaju/light7Local/master/img/productShow/20170518152848.png)
+同步代码1
+

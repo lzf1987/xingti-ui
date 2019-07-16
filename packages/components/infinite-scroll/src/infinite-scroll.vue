@@ -44,6 +44,10 @@ export default {
     loading() {
       if (!this.loading) {
         this.throttle();
+      }else{
+        this.$nextTick(()=>{
+          this.$refs.xtScrollBox.scrollTop = this.$refs.xtScrollBox.scrollHeight;
+        })
       }
     }
   },
